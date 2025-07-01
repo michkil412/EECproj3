@@ -34,7 +34,7 @@ async function test()
 {
     try 
     {
-        const response = await fetch('https://www.monitoringanalytics.com/data/marginal_fuel.shtml');
+        const response = await fetch('https://cors-anywhere.herokuapp.com/https://www.monitoringanalytics.com/data/marginal_fuel.shtml');
         if(response.ok)
         {
             const data = await response.json();
